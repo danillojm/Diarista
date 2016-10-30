@@ -1,4 +1,4 @@
-package br.com.diaristaAppWeb.util;
+package br.com.diaristaWeb.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -18,7 +18,7 @@ public class HibernateUtil {
 					.applySettings(configuration.getProperties()).build();
 
 			// constrói uma fábrica de sessão a partir do registro de serviço
-			sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+			sessionFactory = configuration.buildSessionFactory();
 			System.out.println("Sessão Criada ");
 		}
 

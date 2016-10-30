@@ -1,4 +1,4 @@
-package br.com.diaristaAppWeb.util;
+package br.com.diaristaWeb.util;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Locale;
 
 public abstract class Utils {
-	
+
 	public static String diasVencimentoFormatado(int diaVencimento) {
 		DateFormat formatador = DateFormat.getDateInstance();
 		Locale myLocale = Locale.getDefault();

@@ -14,7 +14,7 @@
 	<!-- Parâmetros de execução -->
 	<build>
 		<!-- Nome do projeto empacotado -->
-		<finalName>Drogaria</finalName>
+		<finalName>Diarista</finalName>
 
 		<!-- Plugins -->
 		<plugins>
