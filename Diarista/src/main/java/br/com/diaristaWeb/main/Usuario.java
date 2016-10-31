@@ -13,6 +13,12 @@ import javax.persistence.Table;
 @Table(name = "tb_usuario")
 public class Usuario {
 
+	
+	public static final String strId = "id";
+	public static final String strSenha = "senha";
+	public static final String strPessoa = "pessoa";
+	public static final String strTipo = "tipo";
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;

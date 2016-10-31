@@ -4,6 +4,7 @@ public class CadastroForm {
 
 	public void salvar() {
 System.out.println("awda");
+
 	}
 
 }

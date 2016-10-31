@@ -13,6 +13,13 @@ import javax.persistence.Table;
 @Table(name="tb_pessoa")
 public class Pessoa implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5671915120861782617L;
+
+	public static final String strNome ="nome";
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private String id;
@@ -30,7 +37,7 @@ public class Pessoa implements Serializable {
 	private String rua;
 	
 	@Column(nullable = false)
-	private Short numero;
+	private Long numero;
 	
 	@Column(length = 30, nullable = false)
 	private String bairro;
@@ -82,11 +89,11 @@ public class Pessoa implements Serializable {
 		this.rua = rua;
 	}
 
-	public Short getNumero() {
+	public Long getNumero() {
 		return numero;
 	}
 
-	public void setNumero(Short numero) {
+	public void setNumero(Long numero) {
 		this.numero = numero;
 	}
 
@@ -136,6 +143,14 @@ public class Pessoa implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	
