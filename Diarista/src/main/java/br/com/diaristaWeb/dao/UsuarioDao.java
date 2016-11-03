@@ -2,7 +2,6 @@ package br.com.diaristaWeb.dao;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
-import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
 import br.com.diaristaWeb.main.Pessoa;

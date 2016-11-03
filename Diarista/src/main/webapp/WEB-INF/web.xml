@@ -6,4 +6,9 @@
 
 	<!-- Nome da Aplicação -->
 	<display-name>Diarista</display-name>
+
+<listener>
+<listener-class>br.com.diaristaWeb.util.HibernateContexto</listener-class>
+
+</listener>
 </web-app>

@@ -9,12 +9,21 @@
 
 		<!-- Configurações de Conexão com o Banco de Dados -->
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/diarista</property>
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/appweb</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">12345</property>
 
 		<!-- Pool de Conexões -->
-		<property name="connection.pool_size">1</property>
+		<property name="connection.pool_size">10</property>
+		<property name="c3p0.min_size">5</property>
+        <property name="c3p0.max_size">20</property>		
+        <property name="c3p0.timeout">1800</property>
+<property name="max_statements">50</property>
+         <property name="dialect">org.hibernate.dialect.MysqlSQLDialect</property>   
+
+  
+
+
 
 		<!-- SQL dialect -->
 		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
